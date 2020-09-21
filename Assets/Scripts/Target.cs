@@ -19,6 +19,7 @@ public class Target : MonoBehaviour
 		transform.position = Vector3.SmoothDamp(transform.position, moveTarget, ref velocity, 0.25f);
 	}
 
+	//Call this PUBLIC function when hit.
 	public void Hit()
 	{
 		position = transform.position;
